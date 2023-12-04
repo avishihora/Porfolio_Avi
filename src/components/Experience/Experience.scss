@@ -1,0 +1,67 @@
+.Experience-part {
+  margin-top: 6rem;
+}
+
+.headingExperience {
+  width: 800px;
+  animation: flipInX 1s 1.8s backwards;
+  margin: 2rem auto;
+  padding: 1rem 0rem;
+  background-color: white;
+  color: #262626;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.companyGrid {
+  width: 1000px;
+  border: 1px solid white;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exprienceGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companyGrid img {
+  cursor: pointer;
+  width: 550px;
+  padding: 2.4rem 0rem;
+}
+
+.companyName {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.position {
+  font-size: 1.5rem;
+  color: coral;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-bottom: 0px;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.position:hover {
+  background-color: white;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.mainLandingpage {
+  .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .top-tags {
+    bottom: auto;
+    top: 35px;
+  }
+
+  .tags {
+    color: rgb(237, 237, 207);
+    opacity: 0.6;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  opacity: 0;
+  top: 5%;
+  margin: 3rem auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
