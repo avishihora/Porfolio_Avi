@@ -4,15 +4,14 @@ import Lampros from "../../assets/images/Lampros_Tech_Logo2.png";
 import { useInView } from "react-intersection-observer";
 import "./Experience.scss";
 
-const Experience = () => {
-    const { ref: myref, inView: myExperience, entry } = useInView();
+const Experience =React.forwardRef((props,ref) => {
 
   return (
     <>
       <div
-        ref={myref}
+        ref={ref}
         className={`Experience-part ${
-          myExperience ? "fade-right active" : "reveal"
+          props.inView ? "fade-right active" : "reveal"
         }`}
         id="Exp_id"
       >
@@ -40,6 +39,6 @@ const Experience = () => {
       </div>
     </>
   );
-};
+});
 
 export default Experience;

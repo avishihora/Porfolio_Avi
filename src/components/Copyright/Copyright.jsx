@@ -1,5 +1,4 @@
 import React from 'react'
-import profilePhoto from "../../assets/images/AviShihora.png"
 import "./Loading.scss"
 
 const copyright = () => {
