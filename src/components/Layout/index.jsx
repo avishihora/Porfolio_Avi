@@ -7,7 +7,7 @@ import Experience from '../Experience/Experience'
 import Skill from '../Skill/Skill'
 import Contact from '../Contact/contact'
 import Project from '../Project/project.jsx'
-import Copyright from '../copyright/Copyright.jsx'
+import EndingText from '../End/EndingText.jsx';
 import './index.scss'
 import "../../index.css"
 // import "../../assets/animation/componentOpeningAni.scss";
@@ -29,7 +29,7 @@ const Layout = () => {
         <Skill ref={myrefSk}  inView={mySkillElement}/>
         <Project ref={myrefPr} inView={myProjectElement}/>
         <Contact ref={myrefCo} inView={myContactElement}/>
-        <Copyright />
+        <EndingText/>
       </>
     );
 }
