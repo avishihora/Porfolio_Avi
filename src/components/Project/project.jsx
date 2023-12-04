@@ -8,7 +8,7 @@ import Book from "../../assets/images/Book.webp";
 import profilePic from "../../assets/images/profile-removebg.webp";
 import portfolioWeb from "../../assets/images/PortfoioWeb.webp";
 import airplaneDataBase from "../../assets/images/airplanedatabase.webp";
-import Adobeillustgrator from "../../assets/images/Adobeillustrator.webp";
+import Adobeillustrator from "../../assets/images/Adobeillustrator.webp";
 import { Link } from "react-router-dom";
 
 const project = React.forwardRef((props,ref) => {
