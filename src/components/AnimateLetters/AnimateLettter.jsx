@@ -12,6 +12,7 @@ const AnimateLettter = ({ letterClass, strArray, idx }) => {
             </span>
           
           ))}
+          <br style={{margin:'0'}}></br>
       </span>
     </>
   )

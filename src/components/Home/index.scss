@@ -1,16 +1,16 @@
 .home-page {
-  .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
+  .sideHeading{
 
     .between-animation{
       animation: ab 3s repeat ease-out;
     }
   }
+
+  .positionHeading{
+    // top: 50%;
+  }
+
+ 
   @keyframes ab {
     0%{
       color: #262626;
@@ -23,12 +23,12 @@
     }
     
   }
-  h1 {
+  .sideHeading {
     color: white;
-    font-size: 4rem;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 4px;
-    margin: 0;
+    // margin: 0;
+    // font-size: 4rem;
 
     &::before {
       content: '<h1>';
@@ -36,22 +36,22 @@
       font-weight: 200;
       color: coral;
       position: absolute;
-      margin-top: -45px;
-      font-size: 38px;
+      margin-top: -4rem;
     }
 
     &::after {
-      // content: "\a</h1>";
-      content: "\00a0</h1>";
+      content: "</h1>";
+      // content: "\00a0</h1>";
       // white-space: pre;
       font-family: 'Poppins', sans-serif;
       color: coral;
       position: absolute;
-      font-size: 38px;
+      // font-size: 38px;
       font-weight: 200;
-      left: 530px;
-      margin-top: 15px;
+      // left: 530px;
+      margin-top: 1.2rem;
     }
+    
     img {
       width: 70px;
     }
@@ -63,17 +63,17 @@
     font-weight: 400;
     letter-spacing: 4px;
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
+    // font-size: 40px;
     animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-btn {
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
     letter-spacing: 3px;
     border: 1px solid white;
-    padding: 15px 20px;
+    // padding: 15px 20px;
     background-color: #262626;
-    margin-top: 2rem;
+    // margin-top: 2rem;
     cursor: pointer;
     animation: fadeIn 2s 3s backwards;
     white-space: nowrap;

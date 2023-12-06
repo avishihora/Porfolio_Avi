@@ -1,10 +1,11 @@
 .Eduaction-part {
+  height: 100vh;
   margin: 0rem 4rem;
     margin-top: 6rem;
 }
 
 .heading {
-  width: 800px;
+  // width: 800px;
   animation: flipInX 1s 1.8s backwards;
   animation-iteration-count: 2;
   padding: 1rem 0rem;
@@ -47,5 +48,5 @@
   letter-spacing: 2px;
   height: 15rem;
   justify-content: space-around;
-  width: 55rem;
+  // width: 55rem;
 }

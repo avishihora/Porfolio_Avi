@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: 300 11px/1.4 'Raleway', sans-serif;
@@ -15,6 +19,7 @@ body {
   opacity: 0;
   transition: 2s all ease;
 }
+
 .reveal .active {
    transform: translateY(0);
   opacity: 1;

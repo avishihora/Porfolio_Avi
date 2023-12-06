@@ -5,7 +5,7 @@ import namelogo from "../../assets/images/AviShihora.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Squash as Hamburger } from "hamburger-react";
 import profilePic from "../../assets/images/profile-removebg.webp";
-
+import "../../index.css"
 import {
   faBriefcase,
   faEnvelope,
@@ -21,16 +21,15 @@ const Sidebar = () => {
   if (isLoading) {
     return (
       <>
-        <div className="main-nav-bar">
+        <div className="main-nav-bar  ">
           <div>
             <Link className="logo" to="/">
               <img src={namelogo} alt="" />
             </Link>
           </div>
-          <div></div>
           <div className="nav-list">
             <div className="nav-lists"><a href="#Home_id">Home</a></div>
-            <div className="nav-lists"><a href="#Exp_id">About</a></div>
+            <div className="nav-lists"><a href="#Exp_id">Experience</a></div>
             <div className="nav-lists">
               <a href="#Project_id">Project</a>
             </div>
@@ -50,24 +49,28 @@ const Sidebar = () => {
   } else {
     return (
       <>
-        <div className="main-nav-bar">
+        <div className=" flex flex-row  justify-between h-30 mt-5  	">
           <div>
-            <Link className="logo" to="/">
-              <img src={namelogo} alt="" />
-            </Link>
+            <img
+              src={namelogo}
+              alt=""
+              className="pl-20 h-20 sm:h-10 sm:pl-10 md:h-16 lg:h-16 xl:h-16 2xl:h-16"
+            />
           </div>
-          <div></div>
-          <div className="nav-list">
-            <div className="nav-lists">
-              <a href="#Home_id">Home</a>
+          <div className="flex flex-row space-x-3  justify-end pr-20 text-2xl subpixel-antialiased font-light tracking-widest items-center lg:hidden xl:hidden	">
+            <div className="px-2 pb-1 hover:border-b-2 border-white-500 ">
+              <a href="#Home_id ">Home</a>
             </div>
-            <div className="nav-lists">
+            <div className="px-2 pb-1 hover:border-b-2 border-white-500">
+              <a href="#Education_id ">Education</a>
+            </div>
+            <div className="px-2 pb-1 hover:border-b-2 border-white-500">
               <a href="#Exp_id">Experience</a>
             </div>
-            <div className="nav-lists">
+            <div className="px-2 pb-1 hover:border-b-2 border-white-500">
               <a href="#Project_id">Project</a>
             </div>
-            <div className="nav-lists">
+            <div className="px-2 pb-1 hover:border-b-2 border-white-500">
               <a href="#Contact_id">Contact</a>
             </div>
           </div>
@@ -85,7 +88,6 @@ const Sidebar = () => {
             <span className="tags bottom-tags">&lt;/html&gt;</span>
           </div>
           <div> */}
-        <img className="profilePic" src={profilePic} alt="" />
         {/* </div>
         </div> */}
 

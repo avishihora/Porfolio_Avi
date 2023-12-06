@@ -1,11 +1,11 @@
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout/index.jsx";
-import Project from "./components/Project/project.jsx";
 import ProjectDetails from "./components/Project/projectDetails.jsx";
 import HomeLayout from "./components/HomeLayout.jsx"
+import MyDesign from "./components/Project/MyDesign.jsx"
+import "./index.css";
 
-// import About from "./components/A"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,13 +16,16 @@ const router = createBrowserRouter([
         element: <Layout />,
       },
       {
-        path: "/project",
-        element: <ProjectDetails />,
+        path: "project",
         children: [
           {
             index: true,
-            path: "1",
+            path: "projectDetails",
             element: <ProjectDetails />,
+          },
+          {
+            path: "images",
+            element: <MyDesign />,
           },
         ],
       },

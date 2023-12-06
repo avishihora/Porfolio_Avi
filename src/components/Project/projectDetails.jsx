@@ -1,6 +1,6 @@
 import React from 'react'
 import "./projectDetails.scss"
-import portfolioweb from "../../assets/images/PortfoioWeb.png"
+import portfolioweb from "../../assets/images/profile-removebg.webp"
 const projectDetails = () => {
   return (
     <div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBootstrap,
@@ -12,38 +13,26 @@ import {
   faReact,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
-
-import React from "react";
 import "./Skill.scss";
-import render from "../../assets/images/render.svg";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import adobeIllustrator from "../../assets/images/adobe_illustrator_logo_icon_167899.svg";
-import { useInView } from "react-intersection-observer";
-const Skill =React.forwardRef ((props,ref) => {
+import express from "../../assets/images/expressjs-icon.svg";
 
+const Skill = React.forwardRef((props, ref) => {
   return (
     <>
-        <div
-        className={`Skill-part ${
-          props.inView ? "active fade-left" : "reveal"
-        }`}
+      <div
+        className={`Skill-part ${props.inView ? "active fade-left" : "reveal"}`}
         ref={ref}
       >
-
         <div className="headingSkill">Skill</div>
         <div className="SkillsGrid">
-          <div className="languageGrid">
+          <div className="languageGrid sm:grid-cols-1">
             {/* <NavLink to="/asas"> */}
             <div className="icon">
               <FontAwesomeIcon icon={faHtml5} color="#ffffff" />
             </div>
             <div className="langauageName">HTML</div>
-
-            {/* </NavLink> */}
-            {/* <div className="langauageName">HTML</div> */}
-            {/* <div id="myProgress">
-              <div id="myBar"></div>
-            </div> */}
           </div>
           <div className="languageGrid">
             {/* <NavLink to="/asas"> */}
@@ -82,55 +71,46 @@ const Skill =React.forwardRef ((props,ref) => {
               <FontAwesomeIcon icon={faSass} color="#ffffff" />
             </div>
             <div className="langauageName">SASS</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
           <div className="languageGrid">
             <div className="icon">
               <FontAwesomeIcon icon={faBootstrap} color="#ffffff" />
             </div>
             <div className="langauageName">Bootstrap 5</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
           <div className="languageGrid">
             <div className="icon">
               <FontAwesomeIcon icon={faNode} color="#ffffff" />
             </div>
-            <div className="langauageName">SASS</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
+            <div className="langauageName">Node.js</div>
           </div>
           <div className="languageGrid">
-            <div className="icon">
-              <FontAwesomeIcon icon={faNodeJs} color="#ffffff" />
+            <div className="icon express">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="coral"
+                viewBox="0 0 32 32"
+                width="64"
+                height="64"
+              >
+                <path d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z" />
+              </svg>{" "}
             </div>
             <div className="langauageName">Express.js</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
+
           <div className="languageGrid">
             {/* <FontAwesomeIcon icon={faDatabase} pulse color="#ffffff" /> */}
             <div className="icon">
               <FontAwesomeIcon icon={faDatabase} />{" "}
             </div>
             <div className="langauageName">MongoDB</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
           <div className="languageGrid">
             <div className="icon">
               <FontAwesomeIcon icon={faGithub} color="#ffffff" />
             </div>
             <div className="langauageName">Github</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
           <div className="languageGrid">
             <div className="icon">
@@ -159,30 +139,6 @@ const Skill =React.forwardRef ((props,ref) => {
               </svg>
             </div>
             <div className="langauageName">Netlify</div>
-          </div>
-          <div className="languageGrid">
-            {/* <FontAwesomeIcon icon={faDatabase} pulse color="#ffffff" />  */}
-            <div className="icon heroku">
-              <svg
-                width="50px"
-                height="50px"
-                viewBox="-14.5 0 285 285"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid"
-              >
-                <g>
-                  <path
-                    d="M230.4,0 C244.39552,0 255.77047,11.2315104 255.99657,25.1765997 L256,25.6 L256,258.844444 C256,272.839964 244.765005,284.214915 230.823296,284.441014 L230.4,284.444444 L25.6,284.444444 C11.60448,284.444444 0.2295296,273.209449 0.003430144,259.26774 L0,258.844444 L0,25.6 C0,11.60096 11.2349952,0.2294592 25.1767043,0.003429088 L25.6,0 L230.4,0 Z M230.4,14.2222222 L25.6,14.2222222 C19.426,14.2222222 14.3820625,19.169691 14.2259468,25.3068692 L14.2222222,25.6 L14.2222222,258.844444 C14.2222222,265.018444 19.169691,270.062382 25.3068692,270.218498 L25.6,270.222222 L230.4,270.222222 C236.5775,270.222222 241.618047,265.274753 241.774056,259.137575 L241.777778,258.844444 L241.777778,25.6 C241.777778,19.328 236.675556,14.2222222 230.4,14.2222222 Z M64,184.888889 L96,213.333333 L64,241.777778 L64,184.888889 Z M92.4444444,42.6666667 L92.4444444,123.416889 C106.645333,118.794667 126.496,113.777778 145.777778,113.777778 C163.36,113.777778 173.884444,120.689778 179.616,126.488889 C191.7248,138.738489 192.013158,154.309103 191.997015,156.385666 L191.996444,156.444444 L192,241.777778 L163.555556,241.777778 L163.555556,156.835556 C163.416889,150.197333 160.216889,142.222222 145.777778,142.222222 C117.146098,142.222222 85.0644658,156.478539 84.1117507,156.905113 L84.0924444,156.913778 L64,166.016 L64,42.6666667 L92.4444444,42.6666667 Z M192,42.6666667 C190.08,58.8231111 183.530667,74.3111111 170.666667,88.8888889 L170.666667,88.8888889 L142.222222,88.8888889 C153.400889,74.2222222 160.419556,58.7875556 163.555556,42.6666667 L163.555556,42.6666667 Z"
-                    fill="coral"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-            <div className="langauageName">Heroku</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
 
           <div className="languageGrid">
@@ -222,19 +178,19 @@ const Skill =React.forwardRef ((props,ref) => {
               </svg>
             </div>
             <div className="langauageName">Render</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
 
           <div className="languageGrid">
-            <div className="icon">
-              <img src={adobeIllustrator} alt="" />
+            <div className="icon adobe">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60">
+                <path d="M38.606 7.5h42.788v41.62H38.606z" fill="#262626" />
+                <path
+                  d="M36.66 5.566v45.5h46.68v-45.5zm1.945 1.945h42.788v41.62H38.606zm14.257 23.825l-1.536 5.835c-.04.156-.097.194-.292.194h-2.86c-.194 0-.233-.058-.194-.292l5.524-19.332c.097-.35.156-.66.194-1.614 0-.136.058-.194.156-.194h4.084c.136 0 .194.04.233.194l6.185 20.985c.04.156 0 .253-.156.253h-3.23c-.156 0-.253-.04-.292-.175l-1.614-5.854zm5.407-3.15l-2.314-9.14h-.04c-.408 2.276-1.44 6.126-2.256 9.14zm8.75-10.816c0-1.245.875-1.984 1.984-1.984 1.186 0 1.984.797 1.984 1.984 0 1.284-.836 1.984-2.023 1.984-1.128 0-1.945-.7-1.945-1.984zm.233 4.415c0-.156.058-.233.233-.233h3.053c.156 0 .233.058.233.233V37.13c0 .156-.04.233-.233.233h-3.015c-.194 0-.253-.097-.253-.253V21.786z"
+                  fill="coral"
+                />
+              </svg>
             </div>
             <div className="langauageName">Adobe illustrator</div>
-            <div className="collegeName">
-              {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
-            </div>
           </div>
         </div>
       </div>

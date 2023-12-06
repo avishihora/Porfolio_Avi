@@ -37,44 +37,62 @@ const contact = React.forwardRef((props,ref) => {
 
   return (
     <>
+      <div id="Contact_id">
+        <div
+          className={` ${props.inView ? "active fade-left" : "reveal"}`}
+          ref={ref}
+        >
+          <h4 className="heading">Contact Me</h4>
+          <div className="ContactForm">
+            <form method="post" ref={form} onSubmit={handleSubmit}>
+              {/* <label htmlFor="">Name :</label> */}
+              <div className="form">
+                {" "}
+                <input
+                  type="text"
+                  ref={nameRef}
+                  name="Name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
 
-     <div
-      className={` ${
-        props.inView ? "active fade-left" : "reveal"
-      }`}
-      ref={ref}
-    >
-      <h4 className="heading" id="Contact_id">
-        Contact Me
-      </h4>
-      <div className="ContactForm">
-        <form method="post" ref={form} onSubmit={handleSubmit}>
-          {/* <label htmlFor="">Name :</label> */}
-          <div className="form">
-            {" "}
-            <input type="text" ref={nameRef} name="Name" placeholder="Name" />
+              {/* <label htmlFor="">Email ID :</label> */}
+              <div className="form">
+                {" "}
+                <input
+                  type="email"
+                  ref={emailRef}
+                  placeholder="Email Id"
+                  required
+                />
+              </div>
+              {/* <label htmlFor="">Phone Number</label> */}
+              <div className="form">
+                {" "}
+                <input
+                  type="text"
+                  ref={mobileNum}
+                  placeholder="Mobile Number"
+                />
+              </div>
+              {/* <label htmlFor="">Message</label> */}
+              <div className="form">
+                {" "}
+                <textarea
+                  type="text"
+                  ref={msg}
+                  placeholder="Message"
+                  rows="3"
+                  required
+                />
+              </div>
+              <button className="btnSubmit" disabled={loading}>
+                Submit
+              </button>
+            </form>
           </div>
-
-          {/* <label htmlFor="">Email ID :</label> */}
-          <div className="form">
-            {" "}
-            <input type="email" ref={emailRef} placeholder="Email Id" />
-          </div>
-          {/* <label htmlFor="">Phone Number</label> */}
-          <div className="form">
-            {" "}
-            <input type="text" ref={mobileNum} placeholder="Mobile Number" />
-          </div>
-          {/* <label htmlFor="">Message</label> */}
-          <div className="form">
-            {" "}
-            <textarea type="text" ref={msg} placeholder="Message" rows="3" />
-          </div>
-          <button className="btnSubmit" disabled={loading}>
-            Submit
-          </button>
-        </form>
-      </div>
+        </div>
       </div>
     </>
   );
