@@ -1,38 +1,33 @@
 .home-page {
-  .sideHeading{
-
-    .between-animation{
+  .sideHeading {
+    .between-animation {
       animation: ab 3s repeat ease-out;
     }
   }
 
-  .positionHeading{
+  .positionHeading {
     // top: 50%;
   }
 
- 
   @keyframes ab {
-    0%{
+    0% {
       color: #262626;
     }
-    50%{
+    50% {
       color: aliceblue;
     }
-    100%{
+    100% {
       color: #262626;
     }
-    
   }
   .sideHeading {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     letter-spacing: 4px;
-    // margin: 0;
-    // font-size: 4rem;
 
     &::before {
-      content: '<h1>';
-      font-family: 'Poppins', sans-serif;
+      content: "<h1>";
+      font-family: "Poppins", sans-serif;
       font-weight: 200;
       color: coral;
       position: absolute;
@@ -43,15 +38,13 @@
       content: "</h1>";
       // content: "\00a0</h1>";
       // white-space: pre;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       color: coral;
       position: absolute;
-      // font-size: 38px;
       font-weight: 200;
-      // left: 530px;
       margin-top: 1.2rem;
     }
-    
+
     img {
       width: 70px;
     }
@@ -62,18 +55,14 @@
     margin-top: 20px;
     font-weight: 400;
     letter-spacing: 4px;
-    font-family: 'Quicksand', sans-serif;
-    // font-size: 40px;
+    font-family: "Quicksand", sans-serif;
     animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-btn {
-    // font-size: 1.1rem;
     letter-spacing: 3px;
     border: 1px solid white;
-    // padding: 15px 20px;
     background-color: #262626;
-    // margin-top: 2rem;
     cursor: pointer;
     animation: fadeIn 2s 3s backwards;
     white-space: nowrap;
@@ -89,7 +78,7 @@
     opacity: 0.8;
     border: 1px solid black;
     color: black;
-    
+
     a:-webkit-any-link {
       color: black;
       text-decoration: none;

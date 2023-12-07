@@ -1,52 +1,38 @@
 .Eduaction-part {
   height: 100vh;
-  margin: 0rem 4rem;
-    margin-top: 6rem;
 }
 
 .heading {
-  // width: 800px;
-  animation: flipInX 1s 1.8s backwards;
-  animation-iteration-count: 2;
-  padding: 1rem 0rem;
+  // animation: flipInX 1s 1.8s backwards;
+  // animation-iteration-count: 2;
   background-color: white;
-  color: #262626;
+  color: #e1b7b7;
   font-family: "Poppins", sans-serif;
-  font-size: 2.4rem;
   font-weight: 300;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .acedamicGrid {
-  animation: fadeIn 1s 1.8s backwards;
-  width: fit-content;
+  // animation: fadeIn 1s 1.8s backwards;
   align-items: center;
   border: 1px solid whitesmoke;
-  margin: 1rem auto;
-  padding: 2rem 4rem;
-  padding-top: 1.4rem;
 }
 
 .acedamicGrid img {
-  display: block;
+  // display: block;
   height: 150px;
   margin: 2rem auto;
 }
 
 .collegeName {
-  font-size: 1.8rem;
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
 }
 
 .schoolGrid {
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
+
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
-  height: 15rem;
-  justify-content: space-around;
-  // width: 55rem;
+
 }

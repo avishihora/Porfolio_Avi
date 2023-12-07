@@ -25,18 +25,20 @@ const Skill = React.forwardRef((props, ref) => {
         className={`Skill-part ${props.inView ? "active fade-left" : "reveal"}`}
         ref={ref}
       >
-        <div className="headingSkill">Skill</div>
-        <div className="SkillsGrid">
-          <div className="languageGrid sm:grid-cols-1">
+        <div className="text-[2.4rem] w-[50%] mx-auto sm:mx-auto  sm:mt-2 sm:text-[1.4rem] text-center sm:tracking-[2px] bg-slate-200 text-[#262626] sm:mx-8 sm:py-2 sm:font-medium ">
+          Skill
+        </div>
+        <div className="SkillsGrid sm:grid sm:grid-cols-2 sm:border-0 sm:m-4	">
+          <div className="languageGrid  sm:flex sm:flex-col sm:items-center   ">
             {/* <NavLink to="/asas"> */}
-            <div className="icon">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faHtml5} color="#ffffff" />
             </div>
-            <div className="langauageName">HTML</div>
+            <div className="langauageName ">HTML</div>
           </div>
-          <div className="languageGrid">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center ">
             {/* <NavLink to="/asas"> */}
-            <div className="icon">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faCss3Alt} color="#ffffff" />
             </div>
             <div className="langauageName">CSS</div>
@@ -48,8 +50,8 @@ const Skill = React.forwardRef((props, ref) => {
               {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
             </div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faJs} color="#ffffff" />
             </div>
             <div className="langauageName">JavaScript</div>
@@ -57,8 +59,8 @@ const Skill = React.forwardRef((props, ref) => {
               {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
             </div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faReact} color="#ffffff" />
             </div>
             <div className="langauageName">React.js</div>
@@ -66,27 +68,28 @@ const Skill = React.forwardRef((props, ref) => {
               {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
             </div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faSass} color="#ffffff" />
             </div>
             <div className="langauageName">SASS</div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center ">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faBootstrap} color="#ffffff" />
             </div>
             <div className="langauageName">Bootstrap 5</div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faNode} color="#ffffff" />
             </div>
             <div className="langauageName">Node.js</div>
           </div>
-          <div className="languageGrid">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center sm:justify-center">
             <div className="icon express">
               <svg
+                className="sm:w-[3rem]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="coral"
                 viewBox="0 0 32 32"
@@ -99,21 +102,28 @@ const Skill = React.forwardRef((props, ref) => {
             <div className="langauageName">Express.js</div>
           </div>
 
-          <div className="languageGrid">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center ">
             {/* <FontAwesomeIcon icon={faDatabase} pulse color="#ffffff" /> */}
-            <div className="icon">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faDatabase} />{" "}
             </div>
             <div className="langauageName">MongoDB</div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem] ">
               <FontAwesomeIcon icon={faGithub} color="#ffffff" />
             </div>
             <div className="langauageName">Github</div>
           </div>
-          <div className="languageGrid">
-            <div className="icon">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon ">
+              
+            </div>
+            <div className="langauageName">Tailwind</div>
+          </div>
+
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon sm:text-[3rem]">
               <FontAwesomeIcon icon={faJava} color="#ffffff" />
             </div>
             <div className="langauageName">Java</div>
@@ -121,12 +131,12 @@ const Skill = React.forwardRef((props, ref) => {
               {/* // Pandit Deendayal Energy University, Gandhinagar, Gujarat. */}
             </div>
           </div>
-          <div className="languageGrid">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center sm:justify-center">
             {/* <FontAwesomeIcon icon={faDatabase} pulse color="#ffffff" /> */}
-            <div className="icon netlify">
+            <div className="icon netlify sm:text-[3rem]">
               {/* <img src={netlify} className="netlify" /> */}
-
               <svg
+                className="sm:text-[3rem]"
                 width="60px"
                 height="60px"
                 viewBox="0 0 32 32"
@@ -141,8 +151,8 @@ const Skill = React.forwardRef((props, ref) => {
             <div className="langauageName">Netlify</div>
           </div>
 
-          <div className="languageGrid">
-            <div className="icon render">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center sm:justify-center">
+            <div className="icon render ">
               <svg
                 height="20.178"
                 viewBox="0 0 77.788 20.178"
@@ -180,8 +190,8 @@ const Skill = React.forwardRef((props, ref) => {
             <div className="langauageName">Render</div>
           </div>
 
-          <div className="languageGrid">
-            <div className="icon adobe">
+          <div className="languageGrid sm:flex sm:flex-col sm:items-center">
+            <div className="icon adobe sm:text-[3rem]">
               <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60">
                 <path d="M38.606 7.5h42.788v41.62H38.606z" fill="#262626" />
                 <path

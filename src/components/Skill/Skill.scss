@@ -12,7 +12,6 @@
     background-color: white;
     color: #262626;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.4rem;
     font-weight: 300;
     text-align: center;
     letter-spacing: 3px;
@@ -20,26 +19,25 @@
 }
 
 .SkillsGrid {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  margin: 0 auto;
-  margin-top: 2rem;
+  // display: grid;
+  // grid-template-columns: auto auto auto auto;
+  // margin: 0 auto;
   // width: 800px;
-  justify-content: center;
+  // justify-content: center;
 
   .languageGrid {
-    border: 1px solid white;
-    display: flex;
+    // border: 1px solid white;
+    // display: flex;
     // width: 200px;
     // height: 150px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
     // margin: 1rem;
 
     .icon {
-      animation: abc 0.8s infinite alternate-reverse ease-in-out;
-
+      animation: abc 1s infinite alternate-reverse ease-in-out;
+    
       .heroku {
         width: 40px;
       }
@@ -47,11 +45,11 @@
 
     @keyframes abc {
       0% {
-        margin-top: -10px;
+        margin-top: -2px;
       }
 
       100% {
-        margin-top: 10px;
+        margin-top:2px;
       }
     }
     // #myProgress {
@@ -72,14 +70,15 @@
       color: whitesmoke;
       font-family: 'Raleway', sans-serif;
       padding: 0.5rem;
-      font-size: 1.2rem;
       letter-spacing: 1.3px;
       text-align: center;
     }
     svg {
       color: coral;
-      font-size: 4rem;
+      // font-size: 2rem;
     }
+     
+    
   }
 
   .languageGrid:hover {
@@ -140,6 +139,7 @@
     .express svg {
       fill: #f0db4f;
     }
+  
 
     .adobe path{
       stroke: #c69;

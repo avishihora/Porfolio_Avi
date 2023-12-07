@@ -38,7 +38,8 @@ const project = React.forwardRef((props,ref) => {
         ref={ref}
       >
         <div
-          className="heading"
+          className="text-[2.4rem] w-[50%] mx-auto sm:mx-auto 
+          sm:mt-2 sm:text-[1.4rem] text-center sm:tracking-[2px] bg-slate-200 text-[#262626] sm:mx-8 sm:py-2 sm:font-medium"
           style={{ marginTop: "2rem", marginBottom: "0rem" }}
         >
           Project
