@@ -1,0 +1,158 @@
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Raleway', sans-serif;
+.Skill-part {
+  // margin: 3rem 0rem;
+
+  .headingSkill {
+    // width: 800px;
+    animation: flipInX 1s 1.8s backwards;
+    margin: 0rem auto;
+    padding: 1rem 0rem;
+    background-color: white;
+    color: #262626;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+}
+
+.SkillsGrid {
+  // display: grid;
+  // grid-template-columns: auto auto auto auto;
+  // margin: 0 auto;
+  // width: 800px;
+  // justify-content: center;
+
+  .languageGrid {
+    // border: 1px solid white;
+    // display: flex;
+    // width: 200px;
+    // height: 150px;
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: space-evenly;
+    // margin: 1rem;
+
+    .icon {
+      animation: abc 1s infinite alternate-reverse ease-in-out;
+
+      .heroku {
+        width: 40px;
+      }
+      @media (min-width: "640px") and (max-width: "767px") {
+        .adobe svg {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+
+    @keyframes abc {
+      0% {
+        margin-top: -2px;
+      }
+
+      100% {
+        margin-top: 2px;
+      }
+    }
+    // #myProgress {
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     background-color: grey;
+    //   }
+
+    //   #myBar {
+    //     width: 15%;
+    //     height: 25px;
+    //     background-color: green;
+    //   }
+
+    .langauageName {
+      color: whitesmoke;
+      font-family: "Raleway", sans-serif;
+      padding: 0.5rem;
+      letter-spacing: 1.3px;
+      text-align: center;
+    }
+    svg {
+      color: coral;
+      // font-size: 2rem;
+    }
+  }
+
+  .languageGrid:hover {
+    .fa-html5 {
+      color: #f06529;
+    }
+
+    .fa-css3-alt {
+      color: #2965f1;
+    }
+
+    .fa-js {
+      color: yellow;
+    }
+
+    .fa-react {
+      color: #00d7ff;
+    }
+
+    .fa-sass {
+      color: #c69;
+    }
+
+    .fa-bootstrap {
+      color: #563d7c;
+    }
+
+    .fa-node {
+      color: #3c873a;
+    }
+
+    .fa-node-js {
+      color: #f0db4f;
+    }
+
+    .fa-database {
+      color: #4db33d;
+    }
+
+    .fa-github {
+      color: white;
+    }
+    .fa-java {
+      color: wheat;
+    }
+
+    .ts svg{
+      fill: #00d7ff;
+    }
+    .netlify path {
+      fill: #00d7ff;
+    }
+
+    .heroku path {
+      fill: #9c7ccd;
+    }
+
+    .render g {
+      fill: #f0db4f;
+    }
+
+    .express svg {
+      fill: #f0db4f;
+    }
+    .tailwind svg path{
+      fill: #00d7ff;
+    }
+
+    .adobe path {
+      stroke: #c69;
+    }
+  }
+}
