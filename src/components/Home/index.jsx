@@ -9,6 +9,8 @@ const Home = () => {
   const [letterClass, seLetterClass] = useState("text-animate");
   const nameArray = ["v", "i", " ", "S", "h", "i", "h", "o", "r", "a", ","];
   const jobArray = [
+    "A",
+    " ",
     "W",
     "e",
     "b",
@@ -37,86 +39,187 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container home-page relative mx-auto ssm:h-[100vh] ">
-      {/* <div className="sideHeading  absolute  text-6xl sm:hidden "> */}
-      {/* <div className="sideHeading  absolute  text-6xl  sm:absolute sm:w-[80%] sm:left-[52%] sm:-translate-x-2/4 sm:top-[38%] sm:text-3xl "> */}
-      {/* <span className={letterClass}>H</span>
-        <span className={`${letterClass} _12`}>i,</span>
-        <br />
-        <span className={`${letterClass} _13`}>I</span>
-        <span className={`${letterClass} _14`}>'m</span>&nbsp;
-        <img src={FirstLetter} alt="" className={letterClass} />
-        <AnimateLettter
-          letterClass={letterClass}
-          strArray={nameArray}
-          idx={15}
-        />
-        <br className="sm:hidden" />
-        <AnimateLettter
-          letterClass={letterClass}
-          strArray={jobArray}
-          idx={22}
-        /> */}
-      {/* </div> */}
-      <div className="profileImg  ssm:text-center max-[600px]:bg-sky-300 ">
-        <img
-          className=" profilePic w-[26%] top-[5%] right-[7rem] absolute right-6 top-1 ssm:inline-block ssm:w-[48%]  
-          sm:w-[45%]  sm:static  md:(mx-auto my-0)"
-          src={profilePic}
-          alt=""
-        />
-      </div>
-      <div className=" absolute partitionLine top-[2rem] text-[0.4rem] h-[35rem] font-thin rotate-[5deg] left-[55%] bg-white ssm:hidden sm:hidden 	">
-        |
-      </div>
-      {/* <h2 className="absolute positionHeadin sm:top-[60%] sm:text-[20px] sm:w-[80%] sm:left-[52%] sm:-translate-x-2/4">
-        Full Stack Developer <span className="between-animation">|</span>{" "}
-        Designer
-      </h2> */}
-      {/* <div className="sideHeading text-4xl  sm:relative  "> */}
-      <div
-        className="sideHeading  absolute top-[8rem] left-[5rem]  text-5xl font-medium
-        ssm:text-[1.5rem] ssm:w-[80%] ssm:h-[48vh] ssm:top-[38%] ssm:left-[14%]
-        sm:absolute sm:w-[95%]  sm:top-[45%] sm:text-3xl 
-        "
-      >
-        <span className={letterClass}>H</span>
-        <span className={`${letterClass} _12`}>i,</span>
-        <br />
-        <span className={`${letterClass} _13`}>I</span>
-        <span className={`${letterClass} _14`}>'m</span>&nbsp;
-        <img src={FirstLetter} alt="" className={`${letterClass} mb-4`} />
-        <AnimateLettter
-          letterClass={letterClass}
-          strArray={nameArray}
-          idx={15}
-        />
-        {/* <br className="hidden" /> */}
-        <AnimateLettter
-          letterClass={letterClass}
-          strArray={jobArray}
-          idx={22}
-        />
+    <>
+      {/* <div className="container home-page relative mx-auto sm:hidden ssm:hidden md:hidden mx:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden ">
+        <div className="profileImg  ssm:text-center ">
+          <img
+            className=" profilePic w-[26%] top-[5%] right-[7rem] absolute right-6 top-1 
+            ssm:relative ssm:left-[50%] ssm:-translate-x-[50%] ssm:w-[48%]  
+            sm:w-[50%]   
+            md:(mx-auto my-0)"
+            src={profilePic}
+            alt=""
+          />
+        </div>
+        <div className=" absolute partitionLine top-[2rem]  h-[35rem] font-thin rotate-[5deg] left-[55%] bg-white ssm:hidden sm:hidden md:hidden mx:hidden">
+          |
+        </div>
+
         <div
-          className="absolute text-3xl positionHeadin animate-fade-up animate-once animate-duration-[2000ms] animate-ease-linear w-[80rem]  
-        min-[471px]:bg-sky-300
-        sm:w-full sm:text-[1.4rem] sm:top-28
+          className="  absolute top-[8rem] left-[5rem]   font-medium
+          ssm:text-center ssm:h-[48vh] ssm:top-[38%] ssm:left-[50%] ssm:-translate-x-[50%] ssm:tracking-widest
+        sm:absolute sm:top-[45%] sm:left-[50%] sm:-translate-x-[50%] 
+        "
+        >
+          <span className={letterClass}>H</span>
+          <span className={`${letterClass} _12`}>i,</span>
+          <br />
+          <span className={`${letterClass} _13`}>I</span>
+          <span className={`${letterClass} _14`}>'m</span>&nbsp;
+          <img
+            src={FirstLetter}
+            alt=""
+            className={`${letterClass} mb-4 ssm:w-[20%]`}
+          />
+          <AnimateLettter
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={15}
+          />
+          <AnimateLettter
+            letterClass={letterClass}
+            strArray={jobArray}
+            idx={22}
+          />
+          <div
+            className="absolute  positionHeadin animate-fade-up animate-once animate-duration-[2000ms] animate-ease-linear 
+        ssm:text-center ssm:top-[50%]
+        sm:w-full  sm:top-28
         lg:w-[40rem]
         xl:w-[40rem]
-        2xl:text-4xl mt-32 2xl:w-[80rem] 2xl:absolute 2xl:w-[40rem]    "
+        2xl:text-4xl 
+        2xl:w-[80rem] 2xl:absolute 2xl:w-[40rem]    "
+          >
+            Full Stack Developer <br />
+            Designer
+          </div>
+          <div className="contBtn absolute -bottom-[140%]  ssm:absolute ssm:bottom-[5%]   sm:absolute sm:-bottom-[140%]  sm:left-[0%]   ">
+            {" "}
+            <button className="flat-btn px-5 py-3  text-xl ssm:px-2 ssm:py-1  sm:px-2 sm:py-1 contactBtn  ">
+              <Link to="/contact">CONTACT ME</Link>
+            </button>
+          </div>
+        </div>
+      </div> */}
+      <div className="homeDiv home-page  ssm:h-[100vh] sm:h-[100vh] md:h-[100vh] mx:h-[100vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] 3xl:h-[100vh] lg:mx-[7%] xl:mx-[7%] 2xl:mx-[10%] 3xl:mx-[10%]">
+        <div className="profileImg  ssm:relative ssm:text-center  ">
+          <img
+            className=" profilePic w-[26%] top-[5%] absolute right-6 top-1 
+          ssm:relative ssm:left-[50%] ssm:-translate-x-[50%]  ssm:w-[12em]  
+          sm:absolute sm:left-[50%] sm:-translate-x-[50%] sm:w-[13em]  sm:top-[0em]
+          md:left-[50%] md:-translate-x-[50%] md:w-[13em] md:-top-[1em] 
+          mx:left-[50%] mx:-translate-x-[50%] mx:w-[15em] mx:top-0
+        lg:w-[15em] lg:top-0 
+          xl:w-[15em] xl:top-5 
+          2xl:w-[19em] 2xl:top-5
+          3xl:w-[22em] 3xl:top-5
+           "
+            src={profilePic}
+            alt=""
+          />
+        </div>
+        <div className=" absolute partitionLine top-[2rem] text-[0.4rem] h-[35rem] font-thin rotate-[4deg] left-[55%] bg-white ssm:hidden sm:hidden md:hidden	mx:hidden lg:hidden xl:h-[60em] xl:left-[70%] 2xl:h-[70em] 3xl:h-[69em] 2xl:left-[60%] 3xl:left-[63%]">
+          |
+        </div>
+        <div
+          className="sideTotal absolute w-[60%] 3xl:h-[100vh] 
+        ssm:left-[50%] ssm:-translate-x-[50%]  
+        sm:top-[41%] sm:text-center sm:w-[100%]
+        md:absolute md:text-center md:w-full
+        mx:absolute mx:w-[100%] mx:top-[12em] mx:left-[50%] mx:-translate-x-[50%] mx:text-center
+        lg:absolute lg:w-full   
+        xl:absolute 
+        2xl:absolute 
+        3xl:absolute 3xl:tracking-[0.2em] 3xl:-top-[2em]"
         >
-          Full Stack Developer <span className="between-animation">|</span>{" "}
-          Designer
+          <div
+            className="sideHeading custom absolute top-[8rem] text-5xl font-medium
+        ssm:absolute ssm:text-[1.3rem] ssm:tracking-[3px]  ssm:h-[48vh] ssm:w-[100%] ssm:top-[45%] 
+        sm:text-[1.5rem] sm:left-[50%] sm:-translate-x-[50%] sm:top-[1em] sm:tracking-[2px]
+        md:text-[1.7rem] md:tracking-widest  md:left-[50%] md:-translate-x-[50%] md:w-full md:text-center md:top-[10em]
+        mx:text-[1.8rem] mx:tracking-widest 
+        lg:text-[2rem] lg:tracking-widest
+        xl:text-[2rem]
+        2xl:text-[2.3rem] 2xl:tracking-widest
+        3xl:text-[2.6em]
+     "
+          >
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>&nbsp;
+            <img src={FirstLetter} alt="" className={`${letterClass} mb-4`} />
+            <AnimateLettter
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            {/* <br className="hidden" /> */}
+            <AnimateLettter
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={20}
+            />
+          </div>
+          {/* <div
+            className="absolute positionHeadin animate-fade-up animate-once animate-duration-[2000ms] animate-ease-linear
+        ssm:absolute ssm:w-full ssm:top-[10em] ssm:text-[20px] ssm:tracking-[2px]
+        sm:absolute sm:w-full sm:text-[1.3rem] sm:tracking-[2px] sm:top-[10em]
+        md:absolute md:text-center md:w-full md:text-[2rem] md:tracking-[2px] md:top-[13.7em] md:text-[#fdffe3] 
+        mx:w-full mx:top-[10em] mx:text-[1.8rem]
+        lg:w-full lg:top-[10em] lg:text-[2.2rem] 
+        xl:w-[180%] xl:text-[2.2rem] xl:top-[10em] xl:tracking-wider
+        2xl:text-4xl   2xl:top-[10em] 2xl:w-[100%] 2xl:tracking-wider
+        3xl:text-[2.2em] 3xl:top-[11em] 3xl:tracking-[0.2em] 3xl:w-[100%]	"
+          >
+             Full Stack Developer{" "}
+            <span className="between-animation">|</span> Designer 
+          </div> */}
+          <div
+            className="absolute positionHeadin animate-fade-up animate-once animate-duration-[2000ms] animate-ease-linear
+        ssm:absolute ssm:w-full ssm:top-[10em] ssm:text-[20px] ssm:tracking-[2px]
+        sm:absolute sm:w-full sm:text-[1.3rem] sm:tracking-[2px] sm:top-[10em]
+        md:absolute md:text-center md:w-full md:text-[2rem] md:tracking-[2px] md:top-[13.7em] md:text-[#fdffe3] 
+        mx:w-full mx:top-[10em] mx:text-[1.8rem]
+        lg:w-full lg:top-[10em] lg:text-[2.2rem] 
+        xl:w-[180%] xl:text-[2.2rem] xl:top-[10em] xl:tracking-wider
+        2xl:text-4xl   2xl:top-[10em] 2xl:w-[100%] 2xl:tracking-wider
+        3xl:text-[2.2em] 3xl:top-[11em] 3xl:tracking-[0.2em] 3xl:w-[100%]	"
+          >
+    
+            Full Stack Developer
+          </div>
+          <div
+            className="contBtn absolute
+         ssm:left-[50%] ssm:-translate-x-[50%] ssm:top-[16em]  
+         sm:left-[50%] sm:-translate-x-[50%]  sm:top-[16em]
+         md:left-[50%] md:-translate-x-[50%] md:top-[33em]
+         mx:left-[50%] mx:-translate-x-[50%] mx:text-[1rem] mx:top-[22em]
+         lg:text-[1rem] lg:top-[27em]
+         xl:text-[1rem] xl:top-[27em]
+         2xl:top-[28em]
+         3xl:top-[32em]"
+          >
+            {" "}
+            <button
+              className="contactBtn flat-btn px-5 py-3 text-xl 
+              ssm:px-2 ssm:py-1 ssm:text-[0.7rem]   
+              sm:px-2 sm:text-[1rem] sm:py-1 
+              md:text-[1rem] md:px-3 md:py-2
+              mx:text-[1rem] mx:px-3 mx:py-2
+              lg:text-[1rem] lg:px-3 lg:py-2
+              xl:text-[1rem] xl:px-3 xl:py-2
+              2xl:text-[1rem] 2xl:px-3 2xl:py-2
+              3xl:text-[1rem] 3xl:px-3 3xl:py-2"
+            >
+              <Link to="/contact">CONTACT ME</Link>
+            </button>
+          </div>
         </div>
-        <div className="contBtn absolute -bottom-[140%]  ssm:absolute ssm:bottom-[5%] ssm:text-[0.7rem]  sm:absolute sm:-bottom-[140%]  sm:left-[0%] sm:text-[0.7rem]  ">
-          {" "}
-          <button className="flat-btn px-5 py-3  text-xl ssm:px-2 ssm:py-1  sm:px-2 sm:py-1 contactBtn  ">
-            <Link to="/contact">CONTACT ME</Link>
-          </button>
-        </div>
-        {/* bg-pink-300 2xl:bg-green-100 */}
+        {/* </div> */}
       </div>
-    </div>
+    </>
   );
 };
 

@@ -70,8 +70,8 @@
   position: absolute;
   // right: 10%;
   // top: 25%;
-  width: 350px;
-  margin: 0 auto;
+  // width: 350px;
+  // margin: 0 auto;
   z-index: 100;
 }
 
@@ -135,12 +135,14 @@
 //     }
 //   }
 
-//   .responsive-btn {
-//     margin-right: 3rem;
-//     position: absolute;
-//     top: 11%;
-//     right: 4rem;
-//   }
+  .responsive-btn {
+    
+    // background-color: #ffffff;
+    // margin-right: 3rem;
+    // position: absolute;
+    // top: 11%;
+    // right: 4rem;
+  }
 //   .hamburger-react {
 //     // margin-right: 5rem;
 //     display: block;

@@ -2,7 +2,7 @@
 // font-family: 'Quicksand', sans-serif;
 // font-family: 'Raleway', sans-serif;
 .Skill-part {
-  margin: 3rem 0rem;
+  // margin: 3rem 0rem;
 
   .headingSkill {
     // width: 800px;
@@ -11,7 +11,7 @@
     padding: 1rem 0rem;
     background-color: white;
     color: #262626;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     text-align: center;
     letter-spacing: 3px;
@@ -32,14 +32,20 @@
     // height: 150px;
     // flex-direction: column;
     // align-items: center;
-    // justify-content: center;
+    justify-content: space-evenly;
     // margin: 1rem;
 
     .icon {
       animation: abc 1s infinite alternate-reverse ease-in-out;
-    
+
       .heroku {
         width: 40px;
+      }
+      @media (min-width: "640px") and (max-width: "767px") {
+        .adobe svg {
+          width: 3rem;
+          height: 3rem;
+        }
       }
     }
 
@@ -49,7 +55,7 @@
       }
 
       100% {
-        margin-top:2px;
+        margin-top: 2px;
       }
     }
     // #myProgress {
@@ -68,7 +74,7 @@
 
     .langauageName {
       color: whitesmoke;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       padding: 0.5rem;
       letter-spacing: 1.3px;
       text-align: center;
@@ -77,8 +83,6 @@
       color: coral;
       // font-size: 2rem;
     }
-     
-    
   }
 
   .languageGrid:hover {
@@ -121,27 +125,33 @@
     .fa-github {
       color: white;
     }
-    .fa-java{
+    .fa-java {
       color: wheat;
     }
-    .netlify path{
+
+    .ts svg{
       fill: #00d7ff;
     }
-  
-    .heroku path{
+    .netlify path {
+      fill: #00d7ff;
+    }
+
+    .heroku path {
       fill: #9c7ccd;
     }
 
-    .render g{
+    .render g {
       fill: #f0db4f;
     }
 
     .express svg {
       fill: #f0db4f;
     }
-  
+    .tailwind svg path{
+      fill: #00d7ff;
+    }
 
-    .adobe path{
+    .adobe path {
       stroke: #c69;
     }
   }
