@@ -28,7 +28,6 @@ const Sidebar = () => {
   //   }
   // }
 
-  if (isLoading) {
     return (
       <>
         <div
@@ -51,7 +50,7 @@ const Sidebar = () => {
           </div>
           <div className="flex flex-row space-x-3  justify-end  text-2xl subpixel-antialiased font-light tracking-widest sm:items-center sm:bg-sky-300 md:hidden mx:hidden lg:hidden  ssm:hidden	sm:hidden">
             <div className="px-2 pb-1 hover:border-b-2 border-white-500 ">
-              <a href="#Home_id ">Home</a>
+              <a href="/ ">Home</a>
             </div>
             <div className="px-2 pb-1 hover:border-b-2 border-white-500">
               <a href="#Education_id ">Education</a>
@@ -167,36 +166,8 @@ const Sidebar = () => {
         ) : null}
       </>
     );
-  } else {
-    return (
-      <>
-        <div className="waviy">
-          {/* <span style={anime()}>A</span>
-          <span style={anime()}>V</span>
-          <span style={anime()}>I</span>
-          <span style={anime()}>&nbsp;</span>
-          <span style={anime()}>S</span>
-          <span style={anime()}>H</span>
-          <span style={anime()}>I</span>
-          <span style={anime()}>H</span>
-          <span style={anime()}>O</span>
-          <span style={anime()}>R</span>
-          <span style={anime()}>A</span> */}
-          {/* <span style={{--i:2}}>V</span> */}
-          {/* <span style="--i:3">I</span>
-          <span style="--i:3">&nbsp;</span>
-          <span style="--i:4">S</span>
-          <span style="--i:5">H</span>
-          <span style="--i:6">I</span>
-          <span style="--i:7">H</span>
-          <span style="--i:8">O</span>
-          <span style="--i:9">R</span>
-          <span style="--i:10">A</span> */}
-        </div>
-      </>
-    );
-  }
-};
+  } 
+
 // };
 
 export default Sidebar;

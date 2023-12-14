@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div className="Loading">
       <div
-        class="waviy ssm:text-[2rem] ssm:tracking-widest sm:text-[3rem] sm:tracking-[3px]  
+        className="waviy ssm:text-[2rem] ssm:tracking-widest sm:text-[3rem] sm:tracking-[3px]  
       md:text-[4rem] md:tracking-[3px]
       mx:text-[4rem] mx:tracking-[3px]
       lg:text-[4rem] lg:tracking-[3px]

@@ -19,13 +19,13 @@ const Layout = () => {
   const { ref: myrefSk, inView: mySkillElement } = useInView();
   const { ref: myrefPr, inView: myProjectElement } = useInView();
   const { ref: myrefCo, inView: myContactElement } = useInView();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      setIsLoading(false)
-    },4000)
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  //     setIsLoading(false)
+  //   },4000)
+  // },[])
   
   if (isLoading) {
     return (

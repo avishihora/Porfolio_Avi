@@ -13,20 +13,29 @@
   .sideHeading {
     color: white;
     font-family: "Raleway", sans-serif;
-    // letter-spacing: 4px;
+    animation: text-blur-out 2s cubic-bezier(0.215, 0.61, 0.355, 1) reverse
+      both;
+
+    @keyframes text-blur-out {
+      0% {
+        filter: blur(0.01);
+      }
+      100% {
+        filter: blur(12px) opacity(0%);
+      }
+    }
+    .between-animation {
+      animation: ab 3s repeat ease-out;
+    }
 
     &::before {
       content: "<h1>";
-      animation: h1 3s 0s 1 linear ;
       font-family: "Poppins", sans-serif;
       font-weight: 200;
       color: coral;
       position: absolute;
       margin-top: -4rem;
-    
     }
-    
-    
 
     &::after {
       content: "</h1>";
@@ -53,92 +62,76 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
-  .flat-btn {
-    letter-spacing: 3px;
-    border: 1px solid white;
-    background-color: #262626;
-    cursor: pointer;
-    animation: fadeIn 2s 3s backwards;
-    white-space: nowrap;
+  // .flat-btn {
+  //   letter-spacing: 3px;
+  //   border: 1px solid white;
+  //   background-color: #262626;
+  //   cursor: pointer;
+  //   white-space: nowrap;
+  //   color: coral;
 
-    a:-webkit-any-link {
-      color: coral;
-      text-decoration: none;
-    }
-  }
+  // }
 
-  .flat-btn:hover {
-    background-color: coral;
-    opacity: 0.8;
-    border: 1px solid black;
-    color: black;
-
-    a:-webkit-any-link {
-      color: black;
-      text-decoration: none;
-    }
-  }
-
-  @media (max-width:310px) {
-    .contBtn{
+  @media (max-width: 310px) {
+    .contBtn {
       top: 13em;
     }
   }
-  @media (max-width:336px) {
-     .contBtn{
+  @media (max-width: 336px) {
+    .contBtn {
       top: 17em;
     }
   }
 
-  @media (max-width:449px) {
-    .sideHeading{
-      &::before{
+  @media (max-width: 449px) {
+    .sideHeading {
+      &::before {
         margin-top: -2rem;
       }
 
-      &::after{
+      &::after {
         margin-top: 1rem;
       }
     }
   }
 
-  @media (max-width:640px) {
-     .sideHeading{
+  @media (max-width: 640px) {
+    .sideHeading {
       width: 100%;
-      &::before{
+      &::before {
         margin-top: -2rem;
       }
 
-      &::after{
+      &::after {
         margin-top: 1rem;
       }
     }
   }
 
-  @media (max-width:767px) {
-        .sideHeading{
+  @media (max-width: 767px) {
+    .sideHeading {
       width: 100%;
-      &::before{
+      &::before {
         content: "";
         margin-top: -2rem;
       }
 
-      &::after{
+      &::after {
         content: "";
         margin-top: 1rem;
       }
     }
   }
 
-  @media (max-width:858px) {
-      .sideHeading{
+  @media (max-width: 858px) {
+    .sideHeading {
       width: 100%;
-      &::before{
+      &::before {
         content: "";
         margin-top: -2rem;
       }
 
-      &::after{
+      &::after {
         content: "";
         margin-top: 1rem;
       }
@@ -196,7 +189,7 @@
   //     margin-top: -2rem;
   //   }
 
-  //   .positionHeadin{  
+  //   .positionHeadin{
   //     top: 50%;
   //   }
   // }
@@ -230,20 +223,11 @@
   //   }
   // }
 
-
-
   // @media (min-width:482px) and (max-width:639px) {
   //    .profilePic{
   //     top: 1%;
   //     width: 14em;
   //   }
-  
+
   // }
-
-
-  .sideHeading {
-    .between-animation {
-      animation: ab 3s repeat ease-out;
-    }
-  }
 }

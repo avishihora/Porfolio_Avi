@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimateLettter from "../AnimateLetters/AnimateLettter.jsx";
 import FirstLetter from "../../assets/images/FirstLetter.webp";
@@ -28,15 +28,18 @@ const Home = () => {
     "\n",
   ];
 
-  const a = async () => {
-    setTimeout(() => {
-      seLetterClass("text-animate-hover");
-    }, 4000);
-  };
+  // const a =  () => {
+  //   setTimeout(() => {
+  //     seLetterClass("text-animate-hover");
+  //   }, 4000);
+  // };
+
 
   useEffect(() => {
-    a();
-  }, []);
+  seLetterClass('text-animate-hover')
+  },[0]);
+
+
 
   return (
     <>
@@ -94,8 +97,8 @@ const Home = () => {
             Designer
           </div>
           <div className="contBtn absolute -bottom-[140%]  ssm:absolute ssm:bottom-[5%]   sm:absolute sm:-bottom-[140%]  sm:left-[0%]   ">
-            {" "}
-            <button className="flat-btn px-5 py-3  text-xl ssm:px-2 ssm:py-1  sm:px-2 sm:py-1 contactBtn  ">
+            {" "
+            <button className="flat-btn px-5 py-3  text-xl ssm:px-2 ssm:py-1  sm:px-2 sm:py-1   ">
               <Link to="/contact">CONTACT ME</Link>
             </button>
           </div>
@@ -104,7 +107,7 @@ const Home = () => {
       <div className="homeDiv home-page  ssm:h-[100vh] sm:h-[100vh] md:h-[100vh] mx:h-[100vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] 3xl:h-[100vh] lg:mx-[7%] xl:mx-[7%] 2xl:mx-[10%] 3xl:mx-[10%]">
         <div className="profileImg  ssm:relative ssm:text-center  ">
           <img
-            className=" profilePic animate-fade-right animate-once  w-[26%] top-[5%] absolute right-6 top-1 
+            className=" profilePic  animate-fade-right animate-once  w-[26%] top-[5%] absolute right-6 top-1 
           ssm:relative ssm:left-[50%] ssm:-translate-x-[50%]  ssm:w-[12em]  
           sm:absolute sm:left-[50%] sm:-translate-x-[50%] sm:w-[13em]  sm:top-[0em]
           md:left-[50%] md:-translate-x-[50%] md:w-[13em] md:-top-[1em] 
@@ -133,7 +136,7 @@ const Home = () => {
         3xl:absolute 3xl:tracking-[0.2em] 3xl:-top-[2em]"
         >
           <div
-            className="sideHeading  custom absolute top-[8rem] text-5xl font-medium
+            className="sideHeading   custom absolute top-[8rem] text-5xl font-medium
         ssm:absolute ssm:text-[1.3rem] ssm:tracking-[3px]  ssm:h-[48vh] ssm:w-[100%] ssm:top-[45%] 
         sm:text-[1.5rem] sm:left-[50%] sm:-translate-x-[50%] sm:top-[1em] sm:tracking-[2px]
         md:text-[1.7rem] md:tracking-widest  md:left-[50%] md:-translate-x-[50%] md:w-full md:text-center md:top-[10em]
@@ -202,7 +205,7 @@ const Home = () => {
           >
             {" "}
             <button
-              className="contactBtn flat-btn px-5 py-3 text-xl 
+              className="tracking-[3px] border-solid border-[1px] border-white hover:bg-[coral] hover:text-[#262626] animate-fade-up flat-btn px-5 py-3 text-xl  hover:border-0
               ssm:px-2 ssm:py-1 ssm:text-[0.7rem]   
               sm:px-2 sm:text-[1rem] sm:py-1 
               md:text-[1rem] md:px-3 md:py-2
@@ -212,7 +215,7 @@ const Home = () => {
               2xl:text-[1rem] 2xl:px-3 2xl:py-2
               3xl:text-[1rem] 3xl:px-3 3xl:py-2"
             >
-              <Link to="/contact">CONTACT ME</Link>
+              <a href="#Contact_id">CONTACT ME</a>
             </button>
           </div>
         </div>

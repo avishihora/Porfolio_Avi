@@ -37,7 +37,7 @@ const contact = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <div id="Contact_id " className="sm:mb-6 3xl:mb-10 ">
+      <div id="Contact_id" className="sm:mb-6 3xl:mb-10 ">
         <div
           className={` ${props.inView ? "active fade-left" : "reveal"}`}
           ref={ref}

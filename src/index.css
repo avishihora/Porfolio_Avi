@@ -57,7 +57,7 @@ body {
 }
 @keyframes fade-right {
   0% {
-    transform: translateX(40px);
+    transform: translateX(100px);
     opacity: 0;
   }
   100% {
