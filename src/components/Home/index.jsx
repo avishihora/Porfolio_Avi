@@ -205,7 +205,7 @@ const Home = () => {
           >
             {" "}
             <button
-              className="tracking-[3px] border-solid border-[1px] border-white hover:bg-[coral] hover:text-[#262626] animate-fade-up flat-btn px-5 py-3 text-xl  hover:border-0
+              className="tracking-[3px] border-solid border-[1px] text-[coral] border-white hover:bg-[coral] hover:text-[#262626] animate-fade-up flat-btn px-5 py-3 text-xl  hover:border-0
               ssm:px-2 ssm:py-1 ssm:text-[0.7rem]   
               sm:px-2 sm:text-[1rem] sm:py-1 
               md:text-[1rem] md:px-3 md:py-2
