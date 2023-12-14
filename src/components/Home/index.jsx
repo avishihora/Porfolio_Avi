@@ -111,6 +111,9 @@ const Home = () => {
           mx:left-[50%] mx:-translate-x-[50%] mx:w-[15em] mx:top-0
         lg:w-[15em] lg:top-0 
           xl:w-[15em] xl:top-5 
+          xl:animate-fade-left
+          2xl:animate-fade-left
+          3xl:animate-fade-left
           2xl:w-[19em] 2xl:top-5
           3xl:w-[22em] 3xl:top-5
            "
@@ -133,7 +136,7 @@ const Home = () => {
         3xl:absolute 3xl:tracking-[0.2em] 3xl:-top-[2em]"
         >
           <div
-            className="sideHeading custom absolute top-[8rem] text-5xl font-medium
+            className="sideHeading  custom absolute top-[8rem] text-5xl font-medium
         ssm:absolute ssm:text-[1.3rem] ssm:tracking-[3px]  ssm:h-[48vh] ssm:w-[100%] ssm:top-[45%] 
         sm:text-[1.5rem] sm:left-[50%] sm:-translate-x-[50%] sm:top-[1em] sm:tracking-[2px]
         md:text-[1.7rem] md:tracking-widest  md:left-[50%] md:-translate-x-[50%] md:w-full md:text-center md:top-[10em]
@@ -187,7 +190,6 @@ const Home = () => {
         2xl:text-4xl   2xl:top-[10em] 2xl:w-[100%] 2xl:tracking-wider
         3xl:text-[2.2em] 3xl:top-[11em] 3xl:tracking-[0.2em] 3xl:w-[100%]	"
           >
-    
             Full Stack Developer
           </div>
           <div

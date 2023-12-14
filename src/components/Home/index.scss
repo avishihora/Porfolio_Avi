@@ -17,12 +17,16 @@
 
     &::before {
       content: "<h1>";
+      animation: h1 3s 0s 1 linear ;
       font-family: "Poppins", sans-serif;
       font-weight: 200;
       color: coral;
       position: absolute;
       margin-top: -4rem;
+    
     }
+    
+    
 
     &::after {
       content: "</h1>";
