@@ -104,14 +104,13 @@ const Home = () => {
       <div className="homeDiv home-page  ssm:h-[100vh] sm:h-[100vh] md:h-[100vh] mx:h-[100vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] 3xl:h-[100vh] lg:mx-[7%] xl:mx-[7%] 2xl:mx-[10%] 3xl:mx-[10%]">
         <div className="profileImg  ssm:relative ssm:text-center  ">
           <img
-            className=" profilePic animate-once animate-duration-[3000ms] w-[26%] top-[5%] absolute right-6 top-1 
+            className=" profilePic animate-fade-right animate-once  w-[26%] top-[5%] absolute right-6 top-1 
           ssm:relative ssm:left-[50%] ssm:-translate-x-[50%]  ssm:w-[12em]  
           sm:absolute sm:left-[50%] sm:-translate-x-[50%] sm:w-[13em]  sm:top-[0em]
           md:left-[50%] md:-translate-x-[50%] md:w-[13em] md:-top-[1em] 
           mx:left-[50%] mx:-translate-x-[50%] mx:w-[15em] mx:top-0
         lg:w-[15em] lg:top-0 
           xl:w-[15em] xl:top-5 
-   
           2xl:w-[19em] 2xl:top-5
           3xl:w-[22em] 3xl:top-5
            "
