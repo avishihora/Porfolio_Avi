@@ -21,7 +21,7 @@ const Education = React.forwardRef((props, ref) => {
   //  }, []);
   return (
     <>
-      <div id="Education_id" className="3xl:w-[65%] 3xl:mx-auto pt-5 ">
+      <div id="Education" className="3xl:w-[65%] 3xl:mx-auto pt-5 ">
         <div
           className={`Eduaction-part ${
             props.inView ? "active fade-left" : "reveal"

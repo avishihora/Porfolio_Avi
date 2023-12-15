@@ -29,7 +29,7 @@ const project = React.forwardRef((props, ref) => {
   //   );
   // }
   return (
-    <div id="Project_id" className="3xl:w-[70%] 3xl:mx-auto pt-5">
+    <div id="Project" className="3xl:w-[70%] 3xl:mx-auto pt-5">
       <div
         className={`Project project-container ${
           props.inView ? "active fade-right" : "reveal"
@@ -40,7 +40,7 @@ const project = React.forwardRef((props, ref) => {
           className="text-[2.4rem] w-[50%] mx-auto sm:mx-auto  sm:mt-2 sm:text-[1.4rem] text-center sm:tracking-[2px] bg-slate-200 text-[#262626] sm:mx-8 sm:font-medium sm:py-2 md:text-[2rem] mx:text-[2rem]  xl:text-[2rem] 2xl:text-[2rem] 3xl:text-[2rem]"
           style={{ marginTop: "2rem", marginBottom: "0rem" }}
         >
-          PROJECT
+          PROJECTS
         </div>
 
         <div className="ProjectWork sm:grid sm:grid-cols-1 md:grid md:grid-cols-2  mx:grid mx:grid-cols-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 2xl:grid 2xl:grid-cols-3 3xl:grid 3xl:grid-cols-3">

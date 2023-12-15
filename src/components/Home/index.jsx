@@ -215,7 +215,7 @@ const Home = () => {
               2xl:text-[1rem] 2xl:px-3 2xl:py-2
               3xl:text-[1rem] 3xl:px-3 3xl:py-2"
             >
-              <a href="#Contact_id">CONTACT ME</a>
+              <a href="#Contact">CONTACT ME</a>
             </button>
           </div>
         </div>

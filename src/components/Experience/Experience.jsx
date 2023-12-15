@@ -7,7 +7,7 @@ const Experience =React.forwardRef((props,ref) => {
 
   return (
     <>
-      <div className="Exp_id 3xl:w-[65%] 3xl:mx-auto pt-5 " id="Exp_id">
+      <div className="Exp_id 3xl:w-[65%] 3xl:mx-auto pt-5 " id="Experience">
         <div
           ref={ref}
           className={`Experience-part ${
